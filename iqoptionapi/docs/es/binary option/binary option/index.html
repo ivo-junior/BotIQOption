@@ -1,0 +1,1466 @@
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+
+<head>
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  
+  
+  <link rel="canonical" href="https://iqoptionapi.github.io/iqoptionapi/es/binary%20option/binary%20option/">
+  
+  
+  <link rel="shortcut icon" href="../../../image/icon/iq.ico">
+  <meta name="generator" content="mkdocs-1.1, mkdocs-material-5.1.4">
+  
+  
+  
+  <title>Opciones Binarias - iqoptionapi document</title>
+  
+  
+  
+  <link rel="stylesheet" href="../../../assets/stylesheets/main.c8609f9b.min.css">
+  
+  <link rel="stylesheet" href="../../../assets/stylesheets/palette.85bb4ebe.min.css">
+  
+  
+  
+  
+  <meta name="theme-color" content="#3f51b5">
+  
+  
+  
+  
+  
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+  <style>
+    body,
+    input {
+      font-family:"Roboto",
+      -apple-system,
+      BlinkMacSystemFont,
+      Helvetica,
+      Arial,
+      sans-serif
+    }
+
+    code,
+    kbd,
+    pre {
+      font-family:"Roboto Mono",
+      SFMono-Regular,
+      Consolas,
+      Menlo,
+      monospace
+    }
+
+    .donation {
+      width: 100%;
+      text-align: center;
+      background-image: url("../../../assets/images/donation.jpg");
+      background-size: cover;
+      float: left;
+      height: 380px;
+      color: #ffffff;
+      padding-top: 90px;
+      position: relative;
+    }
+
+    .don-title {
+      font-size: 2.2rem;
+      margin-top: 0;
+      margin-bottom: 25px;
+    }
+
+    .don-sub {
+      font-size: 0.8rem;
+      font-weight: 300;
+      margin-bottom: 0;
+    }
+
+    .don-translate {
+      position: absolute;
+      bottom: 10px;
+      right: 20%;
+      font-weight: bold;
+      font-size: 0.5rem;
+    }
+
+    .don-link {
+      background-color: #e60658;
+      border-radius: 5px;
+      padding: 10px 10px;
+      font-size: 0.6rem;
+    }
+
+    @media (min-width: 768px) {
+      .donation {
+        background-position: 0 -60px;
+        padding-top: 60px;
+      }
+    }
+  </style>
+  
+  
+  
+  
+  
+  
+  
+  
+</head>
+
+
+
+
+
+<body dir="ltr" data-md-color-primary="indigo" data-md-color-accent="blue-grey">
+  
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+      
+      <a href="#para-opciones-binarias" class="md-skip">
+        Skip to content
+      </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid" aria-label="Header">
+    <a href="https://iqoptionapi.github.io/iqoptionapi/" title="iqoptionapi document" class="md-header-nav__button md-logo" aria-label="iqoptionapi document">
+      
+  <img src="../../../logo.png" alt="logo">
+
+    </a>
+    <label class="md-header-nav__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header-nav__title" data-md-component="header-title">
+      
+        <div class="md-header-nav__ellipsis">
+          <span class="md-header-nav__topic md-ellipsis">
+            iqoptionapi document
+          </span>
+          <span class="md-header-nav__topic md-ellipsis">
+            
+              Opciones Binarias
+            
+          </span>
+        </div>
+      
+    </div>
+    
+      <label class="md-header-nav__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active">
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header-nav__source">
+        
+<a href="https://github.com/iqoptionapi/iqoptionapi/" title="Go to repository" class="md-source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 00-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 01-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 000 40.81l195.61 195.6a28.86 28.86 0 0040.8 0l194.69-194.69a28.86 28.86 0 000-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    iqoptionapi
+  </div>
+</a>
+      </div>
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+      
+      
+      
+      
+
+      
+      
+      <div class="donation">
+        <a href="https://github.com/DiMiTriFrog" class="don-translate" target="_blank">
+          Traduccion: Dimitri
+        </a>
+        <h5 class="don-sub">Ayudando a quien te ayuda. </h5>
+        <h3 class="don-title">
+          Soporta este proyecto con una donación
+        </h3>
+        <a href="https://bit.ly/ajudeocanaldofaria" class="don-link">
+          Donación
+        </a>
+      </div>
+      
+      
+
+    </div>
+    <main class="md-main" data-md-component="main">
+      <div class="md-main__inner md-grid">
+        
+        
+        <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+          <div class="md-sidebar__scrollwrap">
+            <div class="md-sidebar__inner">
+              <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="https://iqoptionapi.github.io/iqoptionapi/" title="iqoptionapi document" class="md-nav__button md-logo" aria-label="iqoptionapi document">
+      
+  <img src="../../../logo.png" alt="logo">
+
+    </a>
+    iqoptionapi document
+  </label>
+  
+    <div class="md-nav__source">
+      
+<a href="https://github.com/iqoptionapi/iqoptionapi/" title="Go to repository" class="md-source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 00-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 01-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 000 40.81l195.61 195.6a28.86 28.86 0 0040.8 0l194.69-194.69a28.86 28.86 0 000-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    iqoptionapi
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../.." title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+    
+    <label class="md-nav__link" for="nav-2">
+      English
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
+    </label>
+    <nav class="md-nav" aria-label="English" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
+        English
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../en/" title="Get Start" class="md-nav__link">
+      Get Start
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../en/account/account/" title="Account" class="md-nav__link">
+      Account
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../en/all/all/" title="For all" class="md-nav__link">
+      For all
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../en/binary%20option/binary%20option/" title="Binary option" class="md-nav__link">
+      Binary option
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../en/digital/digital/" title="Digital" class="md-nav__link">
+      Digital
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../en/fef/fef/" title="Foreign exchange futures" class="md-nav__link">
+      Foreign exchange futures
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../en/candle/candle/" title="candle" class="md-nav__link">
+      candle
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../en/techinical%20analysis/" title="Techincal Analysis" class="md-nav__link">
+      Techincal Analysis
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+    
+    <label class="md-nav__link" for="nav-3">
+      Portugues
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
+    </label>
+    <nav class="md-nav" aria-label="Portugues" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
+        Portugues
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../pt/" title="Primeiros Passos" class="md-nav__link">
+      Primeiros Passos
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../pt/account/account.md" title="Conta" class="md-nav__link">
+      Conta
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../pt/all/all.md" title="para Todos" class="md-nav__link">
+      para Todos
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../pt/binary option/binary option.md" title="Opções Binarias" class="md-nav__link">
+      Opções Binarias
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../pt/digital/digital.md" title="Digital" class="md-nav__link">
+      Digital
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../pt/fef/fef.md" title="Forex, Cripto, Ações, Commodities e Fundos" class="md-nav__link">
+      Forex, Cripto, Ações, Commodities e Fundos
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../pt/candle/candle.md" title="candle" class="md-nav__link">
+      candle
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../pt/techinical analysis/index.md" title="Techincal Analysis" class="md-nav__link">
+      Techincal Analysis
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" checked>
+    
+    <label class="md-nav__link" for="nav-4">
+      Espanol
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
+    </label>
+    <nav class="md-nav" aria-label="Espanol" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
+        Espanol
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../" title="Empezar" class="md-nav__link">
+      Empezar
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../account/account/" title="Cuenta" class="md-nav__link">
+      Cuenta
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../all/all/" title="Para todo" class="md-nav__link">
+      Para todo
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Opciones Binarias
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 9h14V7H3v2m0 4h14v-2H3v2m0 4h14v-2H3v2m16 0h2v-2h-2v2m0-10v2h2V7h-2m0 6h2v-2h-2v2z"/></svg>
+        </span>
+      </label>
+    
+    <a href="./" title="Opciones Binarias" class="md-nav__link md-nav__link--active">
+      Opciones Binarias
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#comprar" class="md-nav__link">
+    comprar
+  </a>
+  
+    <nav class="md-nav" aria-label="comprar">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#buy" class="md-nav__link">
+    buy()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#buy_multi" class="md-nav__link">
+    buy_multi()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#buy_by_raw_expirations" class="md-nav__link">
+    buy_by_raw_expirations()
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#get_remaning" class="md-nav__link">
+    get_remaning()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sell_option" class="md-nav__link">
+    sell_option()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#check-win" class="md-nav__link">
+    check win
+  </a>
+  
+    <nav class="md-nav" aria-label="check win">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#check_win" class="md-nav__link">
+    check_win()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#check_win_v2" class="md-nav__link">
+    check_win_v2()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#check_win_v3" class="md-nav__link">
+    check_win_v3()
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#get_binary_option_detail" class="md-nav__link">
+    get_binary_option_detail()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#get_all_init" class="md-nav__link">
+    get_all_init()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#get_all_profit" class="md-nav__link">
+    get_all_profit()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#get_betinfo" class="md-nav__link">
+    get_betinfo()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#get_optioninfo" class="md-nav__link">
+    get_optioninfo
+  </a>
+  
+    <nav class="md-nav" aria-label="get_optioninfo">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#get_optioninfo_1" class="md-nav__link">
+    get_optioninfo()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get_optioninfo_v2" class="md-nav__link">
+    get_optioninfo_v2()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get_option_open_by_other_pc" class="md-nav__link">
+    get_option_open_by_other_pc()
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#obtener-indicador" class="md-nav__link">
+    Obtener indicador
+  </a>
+  
+    <nav class="md-nav" aria-label="Obtener indicador">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ejemplo" class="md-nav__link">
+    Ejemplo¡
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#start_mood_stream" class="md-nav__link">
+    start_mood_stream()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get_traders_mood" class="md-nav__link">
+    get_traders_mood()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get_all_traders_mood" class="md-nav__link">
+    get_all_traders_mood()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stop_mood_stream" class="md-nav__link">
+    stop_mood_stream()
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../digital/digital/" title="Digital" class="md-nav__link">
+      Digital
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../fef/fef/" title="Furutos de divisas" class="md-nav__link">
+      Furutos de divisas
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../candle/candle/" title="Velas" class="md-nav__link">
+      Velas
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../techinical%20analysis/" title="Análisis técnico" class="md-nav__link">
+      Análisis técnico
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+            </div>
+          </div>
+        </div>
+        
+        
+        <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+          <div class="md-sidebar__scrollwrap">
+            <div class="md-sidebar__inner">
+              
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#comprar" class="md-nav__link">
+    comprar
+  </a>
+  
+    <nav class="md-nav" aria-label="comprar">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#buy" class="md-nav__link">
+    buy()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#buy_multi" class="md-nav__link">
+    buy_multi()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#buy_by_raw_expirations" class="md-nav__link">
+    buy_by_raw_expirations()
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#get_remaning" class="md-nav__link">
+    get_remaning()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sell_option" class="md-nav__link">
+    sell_option()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#check-win" class="md-nav__link">
+    check win
+  </a>
+  
+    <nav class="md-nav" aria-label="check win">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#check_win" class="md-nav__link">
+    check_win()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#check_win_v2" class="md-nav__link">
+    check_win_v2()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#check_win_v3" class="md-nav__link">
+    check_win_v3()
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#get_binary_option_detail" class="md-nav__link">
+    get_binary_option_detail()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#get_all_init" class="md-nav__link">
+    get_all_init()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#get_all_profit" class="md-nav__link">
+    get_all_profit()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#get_betinfo" class="md-nav__link">
+    get_betinfo()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#get_optioninfo" class="md-nav__link">
+    get_optioninfo
+  </a>
+  
+    <nav class="md-nav" aria-label="get_optioninfo">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#get_optioninfo_1" class="md-nav__link">
+    get_optioninfo()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get_optioninfo_v2" class="md-nav__link">
+    get_optioninfo_v2()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get_option_open_by_other_pc" class="md-nav__link">
+    get_option_open_by_other_pc()
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#obtener-indicador" class="md-nav__link">
+    Obtener indicador
+  </a>
+  
+    <nav class="md-nav" aria-label="Obtener indicador">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ejemplo" class="md-nav__link">
+    Ejemplo¡
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#start_mood_stream" class="md-nav__link">
+    start_mood_stream()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get_traders_mood" class="md-nav__link">
+    get_traders_mood()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get_all_traders_mood" class="md-nav__link">
+    get_all_traders_mood()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stop_mood_stream" class="md-nav__link">
+    stop_mood_stream()
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+            </div>
+          </div>
+        </div>
+        
+        
+        <div class="md-content">
+          <article class="md-content__inner md-typeset">
+            
+            
+            <a href="https://github.com/iqoptionapi/iqoptionapi/edit/master/docs/es/binary option/binary option.md" title="Edit this page" class="md-content__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
+            </a>
+            
+            
+            
+            
+            
+            <h1 id="para-opciones-binarias">Para opciones binarias<a class="headerlink" href="#para-opciones-binarias" title="Permanent link">&para;</a></h1>
+<h2 id="comprar">comprar<a class="headerlink" href="#comprar" title="Permanent link">&para;</a></h2>
+<p>comprar una opción binaria</p>
+<h3 id="buy">buy()<a class="headerlink" href="#buy" title="Permanent link">&para;</a></h3>
+<p>Ejemplo</p>
+<div class="codehilite"><pre><span></span><code><span class="kn">from</span> <span class="nn">iqoptionapi.stable_api</span> <span class="kn">import</span> <span class="n">IQ_Option</span>
+<span class="kn">import</span> <span class="nn">logging</span>
+<span class="kn">import</span> <span class="nn">time</span>
+<span class="n">logging</span><span class="o">.</span><span class="n">basicConfig</span><span class="p">(</span><span class="n">level</span><span class="o">=</span><span class="n">logging</span><span class="o">.</span><span class="n">DEBUG</span><span class="p">,</span><span class="nb">format</span><span class="o">=</span><span class="s1">&#39;</span><span class="si">%(asctime)s</span><span class="s1"> </span><span class="si">%(message)s</span><span class="s1">&#39;</span><span class="p">)</span>
+<span class="n">Iq</span><span class="o">=</span><span class="n">IQ_Option</span><span class="p">(</span><span class="s2">&quot;email&quot;</span><span class="p">,</span><span class="s2">&quot;pass&quot;</span><span class="p">)</span>
+<span class="n">goal</span><span class="o">=</span><span class="s2">&quot;EURUSD&quot;</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;get candles&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">Iq</span><span class="o">.</span><span class="n">get_candles</span><span class="p">(</span><span class="n">goal</span><span class="p">,</span><span class="mi">60</span><span class="p">,</span><span class="mi">111</span><span class="p">,</span><span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()))</span>
+<span class="n">Money</span><span class="o">=</span><span class="mi">1</span>
+<span class="n">ACTIVES</span><span class="o">=</span><span class="s2">&quot;EURUSD&quot;</span>
+<span class="n">ACTION</span><span class="o">=</span><span class="s2">&quot;call&quot;</span><span class="c1">#or &quot;put&quot;</span>
+<span class="n">expirations_mode</span><span class="o">=</span><span class="mi">1</span>
+
+<span class="n">check</span><span class="p">,</span><span class="nb">id</span><span class="o">=</span><span class="n">Iq</span><span class="o">.</span><span class="n">buy</span><span class="p">(</span><span class="n">Money</span><span class="p">,</span><span class="n">ACTIVES</span><span class="p">,</span><span class="n">ACTION</span><span class="p">,</span><span class="n">expirations_mode</span><span class="p">)</span>
+<span class="k">if</span> <span class="n">check</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;!buy!&quot;</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;buy fail&quot;</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="codehilite"><pre><span></span><code><span class="n">Iq</span><span class="o">.</span><span class="n">buy</span><span class="p">(</span><span class="n">Money</span><span class="p">,</span><span class="n">ACTIVES</span><span class="p">,</span><span class="n">ACTION</span><span class="p">,</span><span class="n">expirations</span><span class="p">)</span>
+                <span class="c1">#Money:Cantidad de dinero type(int)</span>
+                <span class="c1">#ACTIVES:Ejemplo de entrada &quot;EURUSD&quot; OR &quot;EURGBP&quot;.... puedes ver todos loa ACTIVE con -&gt; get_all_ACTIVES_OPCODE</span>
+                <span class="c1">#ACTION:&quot;call&quot;/&quot;put&quot; type(str) call -&gt; sube, put -&gt; baja</span>
+                <span class="c1">#expirations:Introduce minutos, cuidado con los timpos muy largos ya que fallará al comprar (Tiempo de cierre de merrcado) Gracias a Darth-Carrotpie&#39;s code (int)https://github.com/Lu-Yi-Hsun/iqoptionapi/issues/6</span>
+                <span class="c1">#return:if sucess return (True,id_number) esle return(Fale,None)</span>
+</code></pre></div>
+
+<h3 id="buy_multi">buy_multi()<a class="headerlink" href="#buy_multi" title="Permanent link">&para;</a></h3>
+<div class="codehilite"><pre><span></span><code><span class="kn">from</span> <span class="nn">iqoptionapi.stable_api</span> <span class="kn">import</span> <span class="n">IQ_Option</span>
+<span class="n">Iq</span><span class="o">=</span><span class="n">IQ_Option</span><span class="p">(</span><span class="s2">&quot;email&quot;</span><span class="p">,</span><span class="s2">&quot;password&quot;</span><span class="p">)</span>
+<span class="n">Iq</span><span class="o">.</span><span class="n">connect</span><span class="p">()</span><span class="c1">#conectar a iqoption</span>
+<span class="n">Money</span><span class="o">=</span><span class="p">[]</span>
+<span class="n">ACTIVES</span><span class="o">=</span><span class="p">[]</span>
+<span class="n">ACTION</span><span class="o">=</span><span class="p">[]</span>
+<span class="n">expirations_mode</span><span class="o">=</span><span class="p">[]</span>
+
+<span class="n">Money</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">ACTIVES</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">&quot;EURUSD&quot;</span><span class="p">)</span>
+<span class="n">ACTION</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">&quot;call&quot;</span><span class="p">)</span>
+<span class="n">expirations_mode</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+
+<span class="n">Money</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">ACTIVES</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">&quot;EURAUD&quot;</span><span class="p">)</span>
+<span class="n">ACTION</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">&quot;call&quot;</span><span class="p">)</span>
+<span class="n">expirations_mode</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;buy multi&quot;</span><span class="p">)</span>
+<span class="n">id_list</span><span class="o">=</span><span class="n">Iq</span><span class="o">.</span><span class="n">buy_multi</span><span class="p">(</span><span class="n">Money</span><span class="p">,</span><span class="n">ACTIVES</span><span class="p">,</span><span class="n">ACTION</span><span class="p">,</span><span class="n">expirations_mode</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;check win only one id (id_list[0])&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">Iq</span><span class="o">.</span><span class="n">check_win_v2</span><span class="p">(</span><span class="n">id_list</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span><span class="mi">2</span><span class="p">))</span>
+</code></pre></div>
+
+<h3 id="buy_by_raw_expirations">buy_by_raw_expirations()<a class="headerlink" href="#buy_by_raw_expirations" title="Permanent link">&para;</a></h3>
+<p>buy the binary optoin by expired</p>
+<div class="codehilite"><pre><span></span><code><span class="n">price</span><span class="o">=</span><span class="mi">2</span>
+<span class="n">active</span><span class="o">=</span><span class="s2">&quot;EURUSD&quot;</span>
+<span class="n">direction</span><span class="o">=</span><span class="s2">&quot;call&quot;</span>
+<span class="n">option</span><span class="o">=</span><span class="s2">&quot;turbo&quot;</span><span class="c1">#binary</span>
+<span class="n">expired</span><span class="o">=</span><span class="mi">1293923</span><span class="c1"># Este tiempo de expiración necesitas contarlo o obtenerlo por tu mismo</span>
+<span class="n">Iq</span><span class="o">.</span><span class="n">buy_by_raw_expirations</span><span class="p">(</span><span class="n">price</span><span class="p">,</span> <span class="n">active</span><span class="p">,</span> <span class="n">direction</span><span class="p">,</span> <span class="n">option</span><span class="p">,</span><span class="n">expired</span><span class="p">)</span>
+</code></pre></div>
+
+<h2 id="get_remaning">get_remaning()<a class="headerlink" href="#get_remaning" title="Permanent link">&para;</a></h2>
+<p>purchase time=remaning time - 30
+<div class="codehilite"><pre><span></span><code><span class="kn">from</span> <span class="nn">iqoptionapi.stable_api</span> <span class="kn">import</span> <span class="n">IQ_Option</span>
+<span class="n">Iq</span><span class="o">=</span><span class="n">IQ_Option</span><span class="p">(</span><span class="s2">&quot;email&quot;</span><span class="p">,</span><span class="s2">&quot;password&quot;</span><span class="p">)</span>
+<span class="n">Iq</span><span class="o">.</span><span class="n">connect</span><span class="p">()</span><span class="c1">#conectar a iqoption</span>
+<span class="n">Money</span><span class="o">=</span><span class="mi">1</span>
+<span class="n">ACTIVES</span><span class="o">=</span><span class="s2">&quot;EURUSD&quot;</span>
+<span class="n">ACTION</span><span class="o">=</span><span class="s2">&quot;call&quot;</span><span class="c1">#or &quot;put&quot;</span>
+<span class="n">expirations_mode</span><span class="o">=</span><span class="mi">1</span>
+<span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+    <span class="n">remaning_time</span><span class="o">=</span><span class="n">Iq</span><span class="o">.</span><span class="n">get_remaning</span><span class="p">(</span><span class="n">expirations_mode</span><span class="p">)</span>
+    <span class="n">purchase_time</span><span class="o">=</span><span class="n">remaning_time</span><span class="o">-</span><span class="mi">30</span>
+    <span class="k">if</span> <span class="n">purchase_time</span><span class="o">&lt;</span><span class="mi">4</span><span class="p">:</span><span class="c1">#comprar las opciones binarias con un tiempo de compra menor a 4 min</span>
+        <span class="n">Iq</span><span class="o">.</span><span class="n">buy</span><span class="p">(</span><span class="n">Money</span><span class="p">,</span><span class="n">ACTIVES</span><span class="p">,</span><span class="n">ACTION</span><span class="p">,</span><span class="n">expirations_mode</span><span class="p">)</span>
+        <span class="k">break</span>
+</code></pre></div></p>
+<h2 id="sell_option">sell_option()<a class="headerlink" href="#sell_option" title="Permanent link">&para;</a></h2>
+<p><div class="codehilite"><pre><span></span><code><span class="n">Iq</span><span class="o">.</span><span class="n">sell_option</span><span class="p">(</span><span class="n">sell_all</span><span class="p">)</span><span class="c1">#Introduce int o una lista de id de órdenes</span>
+</code></pre></div>
+Ejemplo</p>
+<div class="codehilite"><pre><span></span><code><span class="kn">from</span> <span class="nn">iqoptionapi.stable_api</span> <span class="kn">import</span> <span class="n">IQ_Option</span>
+<span class="kn">import</span> <span class="nn">time</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;login...&quot;</span><span class="p">)</span>
+<span class="n">Iq</span><span class="o">=</span><span class="n">IQ_Option</span><span class="p">(</span><span class="s2">&quot;email&quot;</span><span class="p">,</span><span class="s2">&quot;password&quot;</span><span class="p">)</span>
+<span class="n">Iq</span><span class="o">.</span><span class="n">connect</span><span class="p">()</span><span class="c1">#conectar a iqoption</span>
+<span class="n">Money</span><span class="o">=</span><span class="mi">1</span>
+<span class="n">ACTIVES</span><span class="o">=</span><span class="s2">&quot;EURUSD&quot;</span>
+<span class="n">ACTION</span><span class="o">=</span><span class="s2">&quot;call&quot;</span><span class="c1">#or &quot;put&quot;</span>
+<span class="n">expirations_mode</span><span class="o">=</span><span class="mi">1</span>
+
+<span class="nb">id</span><span class="o">=</span><span class="n">Iq</span><span class="o">.</span><span class="n">buy</span><span class="p">(</span><span class="n">Money</span><span class="p">,</span><span class="n">ACTIVES</span><span class="p">,</span><span class="n">ACTION</span><span class="p">,</span><span class="n">expirations_mode</span><span class="p">)</span>
+<span class="n">id2</span><span class="o">=</span><span class="n">Iq</span><span class="o">.</span><span class="n">buy</span><span class="p">(</span><span class="n">Money</span><span class="p">,</span><span class="n">ACTIVES</span><span class="p">,</span><span class="n">ACTION</span><span class="p">,</span><span class="n">expirations_mode</span><span class="p">)</span>
+
+<span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+<span class="n">sell_all</span><span class="o">=</span><span class="p">[]</span>
+<span class="n">sell_all</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="nb">id</span><span class="p">)</span>
+<span class="n">sell_all</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">id2</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">Iq</span><span class="o">.</span><span class="n">sell_option</span><span class="p">(</span><span class="n">sell_all</span><span class="p">))</span>
+</code></pre></div>
+
+<h2 id="check-win">check win<a class="headerlink" href="#check-win" title="Permanent link">&para;</a></h2>
+<p>Entrará en bucle hasta que la respuesta sea ganadora (win) o sin beneficios (loose)</p>
+<h3 id="check_win">check_win()<a class="headerlink" href="#check_win" title="Permanent link">&para;</a></h3>
+<div class="codehilite"><pre><span></span><code><span class="kn">from</span> <span class="nn">iqoptionapi.stable_api</span> <span class="kn">import</span> <span class="n">IQ_Option</span>
+<span class="n">Iq</span><span class="o">=</span><span class="n">IQ_Option</span><span class="p">(</span><span class="s2">&quot;email&quot;</span><span class="p">,</span><span class="s2">&quot;password&quot;</span><span class="p">)</span>
+<span class="n">Iq</span><span class="o">.</span><span class="n">connect</span><span class="p">()</span><span class="c1">#connect to iqoption</span>
+<span class="n">check</span><span class="p">,</span><span class="nb">id</span> <span class="o">=</span> <span class="n">Iq</span><span class="o">.</span><span class="n">buy</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="s2">&quot;EURUSD&quot;</span><span class="p">,</span> <span class="s2">&quot;call&quot;</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Empezando a comprobar la operación...&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">Iq</span><span class="o">.</span><span class="n">check_win</span><span class="p">(</span><span class="nb">id</span><span class="p">))</span>
+</code></pre></div>
+
+<div class="codehilite"><pre><span></span><code><span class="n">Iq</span><span class="o">.</span><span class="n">check_win</span><span class="p">(</span><span class="mi">23243221</span><span class="p">)</span>
+<span class="c1">#&quot;&quot;Necesitas obtener el id_number de la función buy()&quot;&quot;</span>
+<span class="c1">#Iq.check_win(id_number)</span>
+<span class="c1">#Esta función entrará en un bucle hasta que el resultado sea: win/equal/loose</span>
+</code></pre></div>
+
+<h3 id="check_win_v2">check_win_v2()<a class="headerlink" href="#check_win_v2" title="Permanent link">&para;</a></h3>
+<div class="codehilite"><pre><span></span><code><span class="kn">from</span> <span class="nn">iqoptionapi.stable_api</span> <span class="kn">import</span> <span class="n">IQ_Option</span>
+<span class="n">Iq</span><span class="o">=</span><span class="n">IQ_Option</span><span class="p">(</span><span class="s2">&quot;email&quot;</span><span class="p">,</span><span class="s2">&quot;password&quot;</span><span class="p">)</span>
+<span class="n">Iq</span><span class="o">.</span><span class="n">connect</span><span class="p">()</span><span class="c1">#conectar a iqoption</span>
+<span class="n">check</span><span class="p">,</span><span class="nb">id</span> <span class="o">=</span> <span class="n">Iq</span><span class="o">.</span><span class="n">buy</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="s2">&quot;EURUSD&quot;</span><span class="p">,</span> <span class="s2">&quot;call&quot;</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Empezando a comprobar la operación...&quot;</span><span class="p">)</span>
+<span class="n">polling_time</span><span class="o">=</span><span class="mi">3</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">Iq</span><span class="o">.</span><span class="n">check_win_v2</span><span class="p">(</span><span class="nb">id</span><span class="p">,</span><span class="n">polling_time</span><span class="p">))</span>
+</code></pre></div>
+
+<h3 id="check_win_v3">check_win_v3()<a class="headerlink" href="#check_win_v3" title="Permanent link">&para;</a></h3>
+<p>Mejor camino para comprobar el resultado de
+la operación</p>
+<div class="codehilite"><pre><span></span><code><span class="kn">from</span> <span class="nn">iqoptionapi.stable_api</span> <span class="kn">import</span> <span class="n">IQ_Option</span>
+<span class="n">Iq</span><span class="o">=</span><span class="n">IQ_Option</span><span class="p">(</span><span class="s2">&quot;email&quot;</span><span class="p">,</span><span class="s2">&quot;password&quot;</span><span class="p">)</span>
+<span class="n">Iq</span><span class="o">.</span><span class="n">connect</span><span class="p">()</span><span class="c1">#connect to iqoption</span>
+<span class="n">check</span><span class="p">,</span><span class="nb">id</span> <span class="o">=</span> <span class="n">Iq</span><span class="o">.</span><span class="n">buy</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="s2">&quot;EURUSD&quot;</span><span class="p">,</span> <span class="s2">&quot;call&quot;</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Empezando a comprobar la operación...&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">Iq</span><span class="o">.</span><span class="n">check_win_v3</span><span class="p">(</span><span class="nb">id</span><span class="p">))</span>
+</code></pre></div>
+
+<h2 id="get_binary_option_detail">get_binary_option_detail()<a class="headerlink" href="#get_binary_option_detail" title="Permanent link">&para;</a></h2>
+<p><img alt="" src="../expiration_time.png" /></p>
+<p>sample
+<div class="codehilite"><pre><span></span><code><span class="kn">from</span> <span class="nn">iqoptionapi.stable_api</span> <span class="kn">import</span> <span class="n">IQ_Option</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;login...&quot;</span><span class="p">)</span>
+<span class="n">Iq</span><span class="o">=</span><span class="n">IQ_Option</span><span class="p">(</span><span class="s2">&quot;email&quot;</span><span class="p">,</span><span class="s2">&quot;password&quot;</span><span class="p">)</span>
+<span class="n">Iq</span><span class="o">.</span><span class="n">connect</span><span class="p">()</span><span class="c1">#connect to iqoption</span>
+<span class="n">d</span><span class="o">=</span><span class="n">Iq</span><span class="o">.</span><span class="n">get_binary_option_detail</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">d</span><span class="p">[</span><span class="s2">&quot;CADCHF&quot;</span><span class="p">][</span><span class="s2">&quot;turbo&quot;</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">d</span><span class="p">[</span><span class="s2">&quot;CADCHF&quot;</span><span class="p">][</span><span class="s2">&quot;binary&quot;</span><span class="p">])</span>
+</code></pre></div></p>
+<h2 id="get_all_init">get_all_init()<a class="headerlink" href="#get_all_init" title="Permanent link">&para;</a></h2>
+<p>get_binary_option_detail es la base en eta api</p>
+<p>Tu obtendrás los detalle sobre la opción binaria</p>
+<div class="codehilite"><pre><span></span><code><span class="err">Iq.get_all_init()</span>
+</code></pre></div>
+
+<h2 id="get_all_profit">get_all_profit()<a class="headerlink" href="#get_all_profit" title="Permanent link">&para;</a></h2>
+<p>sample</p>
+<div class="codehilite"><pre><span></span><code><span class="kn">from</span> <span class="nn">iqoptionapi.stable_api</span> <span class="kn">import</span> <span class="n">IQ_Option</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;login...&quot;</span><span class="p">)</span>
+<span class="n">Iq</span><span class="o">=</span><span class="n">IQ_Option</span><span class="p">(</span><span class="s2">&quot;email&quot;</span><span class="p">,</span><span class="s2">&quot;password&quot;</span><span class="p">)</span>
+<span class="n">Iq</span><span class="o">.</span><span class="n">connect</span><span class="p">()</span><span class="c1">#connect to iqoption</span>
+<span class="n">d</span><span class="o">=</span><span class="n">Iq</span><span class="o">.</span><span class="n">get_all_profit</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">d</span><span class="p">[</span><span class="s2">&quot;CADCHF&quot;</span><span class="p">][</span><span class="s2">&quot;turbo&quot;</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">d</span><span class="p">[</span><span class="s2">&quot;CADCHF&quot;</span><span class="p">][</span><span class="s2">&quot;binary&quot;</span><span class="p">])</span>
+</code></pre></div>
+
+<p>Si tu quieres saber el profit en tiempo real
+<a href="/all/#get_commission_change">get real time profit</a></p>
+<h2 id="get_betinfo">get_betinfo()<a class="headerlink" href="#get_betinfo" title="Permanent link">&para;</a></h2>
+<p>Si la opción no cierra todavía o el id es incorrecto, devolverá False
+if order not close yet or wrong id it will return False
+<div class="codehilite"><pre><span></span><code><span class="n">isSuccessful</span><span class="p">,</span><span class="nb">dict</span><span class="o">=</span><span class="n">Iq</span><span class="o">.</span><span class="n">get_betinfo</span><span class="p">(</span><span class="mi">4452272449</span><span class="p">)</span>
+<span class="c1">#Iq.get_betinfo</span>
+<span class="c1">#ENTRADA: order id</span>
+<span class="c1">#SALIDA:isSuccessful,dict</span>
+</code></pre></div></p>
+<h2 id="get_optioninfo">get_optioninfo<a class="headerlink" href="#get_optioninfo" title="Permanent link">&para;</a></h2>
+<h3 id="get_optioninfo_1">get_optioninfo()<a class="headerlink" href="#get_optioninfo_1" title="Permanent link">&para;</a></h3>
+<p>Introduce cuántos datos quieres obtener del historial de Trading (solo para opciones binarias)</p>
+<div class="codehilite"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="n">Iq</span><span class="o">.</span><span class="n">get_optioninfo</span><span class="p">(</span><span class="mi">10</span><span class="p">))</span>
+</code></pre></div>
+
+<h3 id="get_optioninfo_v2">get_optioninfo_v2()<a class="headerlink" href="#get_optioninfo_v2" title="Permanent link">&para;</a></h3>
+<p>Introduce cuántos datos quieres obtener del historial de Trading (solo para opciones binarias)</p>
+<div class="codehilite"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="n">Iq</span><span class="o">.</span><span class="n">get_optioninfo_v2</span><span class="p">(</span><span class="mi">10</span><span class="p">))</span>
+</code></pre></div>
+
+<h3 id="get_option_open_by_other_pc">get_option_open_by_other_pc()<a class="headerlink" href="#get_option_open_by_other_pc" title="Permanent link">&para;</a></h3>
+<p>Obtener si tu cuenta tiene otra sesión abierta (puede ser en otro pc) y está abriendo opciones</p>
+<p>Tu puedes obtener la opción con esta función</p>
+<div class="codehilite"><pre><span></span><code><span class="kn">import</span> <span class="nn">time</span>
+<span class="kn">from</span> <span class="nn">iqoptionapi.stable_api</span> <span class="kn">import</span> <span class="n">IQ_Option</span>
+<span class="n">Iq</span><span class="o">=</span><span class="n">IQ_Option</span><span class="p">(</span><span class="s2">&quot;email&quot;</span><span class="p">,</span><span class="s2">&quot;password&quot;</span><span class="p">)</span>
+<span class="n">Iq</span><span class="o">.</span><span class="n">connect</span><span class="p">()</span><span class="c1">#conectar a iqoption</span>
+<span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+    <span class="c1">#Por favor accede a la web de iqoption y abre alguna opción binaria</span>
+    <span class="k">if</span> <span class="n">Iq</span><span class="o">.</span><span class="n">get_option_open_by_other_pc</span><span class="p">()</span><span class="o">!=</span><span class="p">{}:</span>
+        <span class="k">break</span>
+    <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Obtener la opción abierta de otra sesión y de la misma cuenta&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">Iq</span><span class="o">.</span><span class="n">get_option_open_by_other_pc</span><span class="p">())</span>
+
+<span class="nb">id</span><span class="o">=</span><span class="nb">list</span><span class="p">(</span><span class="n">Iq</span><span class="o">.</span><span class="n">get_option_open_by_other_pc</span><span class="p">()</span><span class="o">.</span><span class="n">keys</span><span class="p">())[</span><span class="mi">0</span><span class="p">]</span>
+<span class="n">Iq</span><span class="o">.</span><span class="n">del_option_open_by_other_pc</span><span class="p">(</span><span class="nb">id</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Depués de la id&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">Iq</span><span class="o">.</span><span class="n">get_option_open_by_other_pc</span><span class="p">())</span>
+</code></pre></div>
+
+<h2 id="obtener-indicador">Obtener indicador<a class="headerlink" href="#obtener-indicador" title="Permanent link">&para;</a></h2>
+<h3 id="ejemplo">Ejemplo¡<a class="headerlink" href="#ejemplo" title="Permanent link">&para;</a></h3>
+<div class="codehilite"><pre><span></span><code><span class="kn">from</span> <span class="nn">iqoptionapi.stable_api</span> <span class="kn">import</span> <span class="n">IQ_Option</span>
+<span class="n">Iq</span><span class="o">=</span><span class="n">IQ_Option</span><span class="p">(</span><span class="s2">&quot;email&quot;</span><span class="p">,</span><span class="s2">&quot;password&quot;</span><span class="p">)</span>
+<span class="n">Iq</span><span class="o">.</span><span class="n">connect</span><span class="p">()</span><span class="c1">#connect to iqoption</span>
+<span class="n">goal</span><span class="o">=</span><span class="s2">&quot;EURUSD&quot;</span>
+<span class="n">Iq</span><span class="o">.</span><span class="n">start_mood_stream</span><span class="p">(</span><span class="n">goal</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">Iq</span><span class="o">.</span><span class="n">get_traders_mood</span><span class="p">(</span><span class="n">goal</span><span class="p">))</span>
+<span class="n">Iq</span><span class="o">.</span><span class="n">stop_mood_stream</span><span class="p">(</span><span class="n">goal</span><span class="p">)</span>
+</code></pre></div>
+
+<h3 id="start_mood_stream">start_mood_stream()<a class="headerlink" href="#start_mood_stream" title="Permanent link">&para;</a></h3>
+<div class="codehilite"><pre><span></span><code><span class="n">Iq</span><span class="o">.</span><span class="n">start_mood_stream</span><span class="p">(</span><span class="n">goal</span><span class="p">)</span>
+</code></pre></div>
+
+<h3 id="get_traders_mood">get_traders_mood()<a class="headerlink" href="#get_traders_mood" title="Permanent link">&para;</a></h3>
+<p>call get_traders_mood() after start_mood_stream</p>
+<div class="codehilite"><pre><span></span><code><span class="n">Iq</span><span class="o">.</span><span class="n">get_traders_mood</span><span class="p">(</span><span class="n">goal</span><span class="p">)</span>
+</code></pre></div>
+
+<h3 id="get_all_traders_mood">get_all_traders_mood()<a class="headerlink" href="#get_all_traders_mood" title="Permanent link">&para;</a></h3>
+<p>Obtendrá todo el indicador de operaciones en que hayas activado el stream</p>
+<div class="codehilite"><pre><span></span><code><span class="n">Iq</span><span class="o">.</span><span class="n">get_all_traders_mood</span><span class="p">()</span>
+<span class="c1">#output:(dict) all mood you start</span>
+</code></pre></div>
+
+<h3 id="stop_mood_stream">stop_mood_stream()<a class="headerlink" href="#stop_mood_stream" title="Permanent link">&para;</a></h3>
+<p>Si no está usando el indicador, porfavor páralo para una mejor conexión.</p>
+<div class="codehilite"><pre><span></span><code><span class="n">Iq</span><span class="o">.</span><span class="n">stop_mood_stream</span><span class="p">(</span><span class="n">goal</span><span class="p">)</span>
+</code></pre></div>
+            
+            
+            
+            
+
+
+            
+          </article>
+        </div>
+      </div>
+    </main>
+    
+    
+<footer class="md-footer">
+  
+  <div class="md-footer-nav">
+    <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
+      
+      <a href="../../all/all/" title="Para todo"
+        class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+        <div class="md-footer-nav__button md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </div>
+        <div class="md-footer-nav__title">
+          <div class="md-ellipsis">
+            <span class="md-footer-nav__direction">
+              Previous
+            </span>
+            Para todo
+          </div>
+        </div>
+      </a>
+      
+      
+      <a href="../../digital/digital/" title="Digital"
+        class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+        <div class="md-footer-nav__title">
+          <div class="md-ellipsis">
+            <span class="md-footer-nav__direction">
+              Next
+            </span>
+            Digital
+          </div>
+        </div>
+        <div class="md-footer-nav__button md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+        </div>
+      </a>
+      
+    </nav>
+  </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+      </div>
+      
+<div class="md-footer-social">
+  
+  
+  
+  <a href="https://github.com/iqoptionapi/iqoptionapi" target="_blank" rel="noopener" title="github.com" class="md-footer-social__link">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+  </a>
+  
+</div>
+
+    </div>
+  </div>
+</footer>
+    
+    </div>
+    
+    <script src="../../../assets/javascripts/vendor.8caa27b7.min.js"></script>
+    <script src="../../../assets/javascripts/bundle.193efd2f.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
+    
+    
+    <script>
+      app = initialize({
+        base: "../../..",
+        features: [],
+        search: Object.assign({
+          worker: "../../../assets/javascripts/worker/search.37585f48.min.js"
+        }, typeof search !== "undefined" && search)
+      })
+    </script>
+    
+    <script src="../../../javascripts/extra.js"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js"></script>
+    
+    
+  </body>
+
+</html>

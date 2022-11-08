@@ -1,0 +1,99 @@
+site_name: iqoptionapi document
+repo_name: "iqoptionapi"
+repo_url: "https://github.com/iqoptionapi/iqoptionapi"
+site_url: "https://iqoptionapi.github.io/iqoptionapi/"
+docs_dir: "doc/"
+site_dir: "docs/"
+extra:
+  search:
+    language: "pt-br"
+    #-tokenizer: '[\a\-\.]+'
+  social:
+    - icon: "fontawesome/brands/github"
+      link: "https://github.com/iqoptionapi/iqoptionapi"
+
+plugins:
+  - search:
+      lang:
+        - pt
+        - en
+        - es
+theme:
+  language: "en"
+  logo: "logo.png"
+  name: "material" #readthedocs/readthedocs
+  custom_dir: doc/theme/material
+  icon: assets/images/favicon.png
+  palette:
+    primary: "indigo"
+    accent: "Blue Grey"
+  features: []
+  font:
+    text: "Roboto"
+    code: "Roboto Mono"
+  favicon: image/icon/iq.ico
+
+# Extensions
+markdown_extensions:
+  - footnotes
+  - codehilite
+  - markdown.extensions.admonition
+  #  - markdown.extensions.codehilite:
+  #     guess_lang: false
+  #     linenums: true
+  - markdown.extensions.def_list
+  - markdown.extensions.footnotes
+  - markdown.extensions.meta
+  - markdown.extensions.toc:
+      permalink: true
+  - pymdownx.superfences:
+      preserve_tabs: true
+  - pymdownx.arithmatex
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+
+  - pymdownx.inlinehilite
+  - pymdownx.magiclink
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+extra_javascript:
+  - "javascripts/extra.js"
+  - "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js"
+
+nav:
+  - Home: index.md
+  - English:
+      - Get Start: en/index.md
+      - Account: en/account/account.md
+      - For all: en/all/all.md
+      - Binary option: en/binary option/binary option.md
+      - Digital: en/digital/digital.md
+      - Foreign exchange futures: en/fef/fef.md
+      - candle: en/candle/candle.md
+      - Techincal Analysis: en/techinical analysis/index.md
+  - Portugues:
+      - Primeiros Passos: pt/index.md
+      - Conta: pt/account/account.md
+      - para Todos: pt/all/all.md
+      - Opções Binarias: pt/binary option/binary option.md
+      - Digital: pt/digital/digital.md
+      - Forex, Cripto, Ações, Commodities e Fundos: pt/fef/fef.md
+      - candle: pt/candle/candle.md
+      - Techincal Analysis: pt/techinical analysis/index.md
+  - Espanol:
+      - Empezar: es/index.md
+      - Cuenta: es/account/account.md
+      - Para todo: es/all/all.md
+      - Opciones Binarias: es/binary option/binary option.md
+      - Digital: es/digital/digital.md
+      - Furutos de divisas: es/fef/fef.md
+      - Velas: es/candle/candle.md
+      - Análisis técnico: es/techinical analysis/index.md

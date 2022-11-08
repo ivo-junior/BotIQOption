@@ -1,0 +1,6 @@
+pylint
+requests
+websocket-client==0.56
+-e git+git://github.com/iqoptionapi/iqoptionapi.git#egg=iqoptionapi
+TA_Lib-0.4.19-cp39-cp39-win_amd64.whl
+cryptography
